@@ -2,7 +2,7 @@ var nombreCompleto = prompt('Ingresa tu nombre.');
 var meAmas = prompt('Dime si me amas: S o N.');
 var msg;
 
-if(nombreCompleto.toUpperCase() == '' && meAmas.toUpperCase() == ''){
+if(nombreCompleto.toUpperCase() !== '' && meAmas.toUpperCase() !== ''){
 
     if(meAmas.toUpperCase() === 'S'){
     alert(`Yo también te amo <3 ${nombreCompleto}.`)
