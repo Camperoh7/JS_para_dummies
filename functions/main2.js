@@ -9,22 +9,12 @@
 
 //4. realizar una función con la cual determinen una cadena de texto es palindromo o no
 
-/*function evaluate(n,n1,n2){
-    evaluate = n,n1,n2
-    for(n = 0; n ; n++){
-        console.log('El número es positivo');
-    }
-    if(evaluate == n1){
-    for(n1=-1; n1 <= -10; n1++){
-        console.log('El número es negativo');
-    }
-}
+//Ejercicio 1
+function evaluate(n){
+    
 }
 
-
-evaluate();
-*/
-
+//Ejercicio 2
 function letra(let){
     this.let = let.toLowerCase();
     if(this.let === 'a' || this.let === 'e' || this.let === 'i' || this.let === 'o' || this.let === 'u') return `Es una vocal.`;
