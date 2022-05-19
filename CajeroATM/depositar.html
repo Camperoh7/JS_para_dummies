@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATM</title>
+    <link rel="icon" href="img/money.ico" type="image/x-icon">
+
+    <script defer src="js/depositar.js"></script>
+    <link rel="stylesheet" href="css/users.css">
+
+</head>
+<body>
+
+    <header>
+        
+        <ul>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">A</div>
+            </li>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">T</div>
+            </li>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">M</div>
+            </li>
+        </ul>
+
+    </header>
+
+    <main class="main2">
+    
+        <h3>DEPÓSITOS</h3></br>
+        <form action="" class="formulario"></form>
+
+        <div class="form_grupo">
+            <label for="" class="form_label">Cuenta Cheques:</label>
+            <div class="form_grupo-input">
+            <input type="text" name="Cantidad1" id="CC" value="1500" class="form_input">
+            <label for="" class="form_label">Cuenta Ahorros:</label>
+            <input type="text" name="Cantidad2" id="CA" value="1000" class="form_input">
+            </div>
+        </div>
+        
+
+        <form action="" class="formulario">
+
+        <div class="form_grupo">
+            <h3 class="form_label">MONTO</h3>
+            <div class="form_grupo-input">
+            <input type="text" id="Cant" placeholder="Cantidad a Depositar" class="form_input">
+            </div>
+        </div></br>
+
+            <div class="form_grupo form_grupo-btn-ingresar2">
+            <input class="form_btn2" type="button" value="Depositar a Cuenta Cheques" id="bt1" onclick="cash1()">
+            </div>
+            <div class="form_grupo form_grupo-btn-ingresar2">
+            <input class="form_btn2" type="button" value="Depositar a Cuenta Ahorros" id="bt2" onclick="cash2()">
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

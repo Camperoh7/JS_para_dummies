@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ATM</title>
+    <link rel="icon" href="img/money.ico" type="image/x-icon">
+
+    <script defer src="js/cuentas.js"></script>
+    <script src="https://kit.fontawesome.com/ac2827a5ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/users.css">
+
+</head>
+<body>
+
+    <header>
+
+        <ul>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">A</div>
+            </li>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">T</div>
+            </li>
+            <li>
+                <input class="glow" type="checkbox" />
+                <div class="atm">M</div>
+            </li>
+        </ul>
+
+    </header>
+    
+    <main>
+
+    <form action="" class="formulario" id="formulario">
+
+        <div class="form_grupo" id="grupo_usuario">
+        <label for="usuario" class="form_label">Usuario</label>
+        <div class="form_grupo-input">
+        <input type="text" class="form_input" name="u" id="usuario">
+        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+        </div>
+        </div>
+
+        <div class="form_grupo" id="grupo_contraseña">
+        <label for="password" class="form_label">Contraseña</label>
+        <div class="form_grupo-input">
+        <input type="password" class="form_input" name="c" id="password">
+        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+        </div>
+        </div>
+
+        <div class="form_grupo" id="grupo_contraseña">
+            <label class="form_label">
+            <input class="form_checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los Terminos y condiciones
+            </label>
+        </div><br>
+
+        <div class="form_mensaje" id="form_mensaje">
+            <p class="error"><i class="fa-solid fa-triangle-exclamation"></i><b> Error: </b>Por favor rellene el formulario.</p>
+        </div>
+
+        <div class="form_grupo form_grupo-btn-ingresar" id="grupo_btn">
+        <input type="button" class="form_btn" value="Ingresar" onclick="login(this.form)">
+        </div>
+
+        <div class="form_grupo form_grupo-btn-ingresar">
+        <button class="form_btn" value="Crear Cuenta">Crear Cuenta</button>
+        </div>
+
+    </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

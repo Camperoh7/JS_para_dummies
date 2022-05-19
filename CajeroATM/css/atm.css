@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body{
+    align-items: center;
+    background: linear-gradient(0deg, rgba(78,151,169,1) 6%, rgba(34,178,195,0.8720530448507529) 31%, rgba(253,45,64,0.7964227927499125) 92%);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+label {
+    position: relative;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    height: 80px;
+    opacity: 0;
+    position: absolute;
+    width: 80px;
+    z-index: 100;
+}
+
+div {
+    align-items: center;
+    /*
+    background: #18191f;
+    border-radius: 20px;
+    box-shadow: -1px -1px 4px rgba(255, 255, 255, 0.05),
+    4px 4px 6px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 4px rgba(255, 255, 255, 0.05),
+    inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+    */
+    color: #555;
+    cursor: pointer;
+    display: flex;
+    font-size: 46px;
+    height: 80px;
+    justify-content: center;
+    margin: 0 4px;
+    position: relative;
+    width: 80px;
+}
+
+/* div:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 75px;
+    height: 38px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+} */
+
+input[type="checkbox"]:checked ~ div {
+    animation: glow 1.5s linear infinite;
+    /*
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.05), inset 4px 4px 6px rgba(0, 0, 0, 0.2);
+    */
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+}
+
+@keyframes glow {
+    0% {
+    filter: hue-rotate(0deg);
+    }
+    100% {
+    filter: hue-rotate(360deg);
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#extraer{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form_input{
+    width: 40%;
+    background: #fff;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.form_input:focus{
+    border: 3px solid #0075ff;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+#extraer:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+p{
+    text-align: center;
+}
+
+img{
+    filter: hue-rotate(160deg);
+}
